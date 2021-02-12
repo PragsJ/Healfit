@@ -1,0 +1,43 @@
+<!-- <div style="background-image: url(../../assets/background.png)">
+<div class="cards">
+    <app-card
+      *ngFor="let post of posts"
+      [title]="post.title"
+      [imageUrl]="post.imageUrl"
+      [username]="post.username"
+      [content]="post.content"
+    ></app-card>
+</div>
+</div> -->
+<div style="background-image: url(../../assets/background.png)">
+<div class="body">
+    <div class="card-container">
+       <div class="card"*ngFor="let post of posts" >
+         <header class="article-header">
+             <div>
+                 <div class="category-title">
+                     Article
+                     <span class="date">{{ post.publishdate }}</span>
+                 </div>
+             </div>
+             <h2 class="article-title">
+                 <a href="{{ post.link }}">
+                 {{ post.title }}
+                </a>
+             </h2>
+         </header>
+         <div class="author">
+             <div class="profile"></div>
+             <div class="info">
+                 <div class="caption">Author</div>
+                 <div class="name">{{ post.author }}</div>
+             </div>
+         </div>
+         <div class="tags">
+             <div>{{ post.tags }}</div>
+         </div>
+       </div>
+     </div>
+ </div>
+</div>
+ 

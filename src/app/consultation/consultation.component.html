@@ -1,0 +1,30 @@
+<div class="body">
+   <img src="../../assets/consultation.png">
+   <div class="card-container">
+       
+      <div class="card" *ngFor="let cons of consultants">
+        <header class="article-header">
+            <div>
+                <div class="category-title">
+                    Experience 
+                    <span class="date">{{cons?.yoe}} years</span>
+                </div>
+            </div>
+            <h2 class="article-title">
+                {{cons?.org_name}}
+            </h2>
+        </header>
+        <div class="author">
+            <div class="profile"></div>
+            <div class="info">
+                <div class="caption">{{ cons?.name }}</div>
+                <div class="name">{{ cons?.mail_id }}</div>
+            </div>
+        </div>
+        <div class="tags">
+            <div>POCS</div>
+            <div>PMS</div>
+        </div>
+      </div>
+    </div>
+</div>

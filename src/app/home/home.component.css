@@ -1,0 +1,71 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    width: 1100px;
+    overflow:auto;
+    text-align:justify; 
+  }
+  .container .card {
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+      6px 6px 20px rgba(0, 0, 0, 0.1), inset -6px -6px 10px rgba(255, 255, 255, 0),
+      inset 6px 6px 20px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s;
+  }
+  .container .card .imgBx {
+    position: relative;
+    text-align: center;
+  }
+  .container .card .imgBx img {
+    max-width: 120px;
+  }
+  .container .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .container .card .contentBx h2 {
+    color: #32a3b1;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+  }
+  .container .card .contentBx p {
+    color: #32a3b1;
+  }
+  .container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #32a3b1;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+      4px 4px 15px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0),
+      inset 4px 4px 10px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .container .card .contentBx a:focus {
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 0),
+      4px 4px 15px rgba(0, 0, 0, 0), inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+      inset 4px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .container .card a span {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.2s;
+  }
+  .container .card a:focus span {
+    display: block;
+    transform: scale(0.95);
+  }
+  

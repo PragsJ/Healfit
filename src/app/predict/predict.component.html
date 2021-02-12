@@ -1,0 +1,13 @@
+<app-carousel></app-carousel>
+<app-navbar style="border-top: 0px;"></app-navbar>
+<body style="background-image: url(../../assets/background.png);">
+    <pre style="font-size:60px;color: rgb(247, 242, 242);margin-left: 0px;">
+        Your next period cycle will be on 
+            <i><b>{{ yourDate | date }}</b></i>.
+        The cycle is predicted to be of <i>{{ user?.avgcycledays }}</i> days.
+    </pre>
+</body>
+<app-footer></app-footer>
+
+      
+      
